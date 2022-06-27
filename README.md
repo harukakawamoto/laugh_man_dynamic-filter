@@ -1,6 +1,4 @@
-# laugh_man_dynamic-filter
-# 概要
+# laugh_man_dynamic_filter
 自分の顔に攻殻機動隊に登場する笑い男のフィルターをかることができます。
-# デモ
-# 実行環境
-# 参考リンク
+## 実行環境
+## 参考リンク
