@@ -1,6 +1,7 @@
 # laugh_man_dynamic_filter
 自分の顔に攻殻機動隊に登場する笑い男のフィルターをかることができます。
 ## デモ
+![demo](https://media.giphy.com/media/AN9CNA6APQMKjnFzlo/giphy.gif)
 
 ## 実行環境
 Pyhton:3.10.5　
