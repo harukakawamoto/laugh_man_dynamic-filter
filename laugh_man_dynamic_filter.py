@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from overlay import CvOverlayImage
+from overlay import overlay
 
 
 #gifをpngに直した24つのファイルが入っているフォルダをpathに指定
@@ -44,7 +44,7 @@ while(cap.isOpened()):
                 laugh_man = cv2.resize(laugh_man_list[count],dsize=None,fx=fx,fy=fx)
 
                 #笑い男の透過素材をwebカメラでキャプチャした画像に重ねる
-                frame = CvOverlayImage.overlay(frame, laugh_man,(x+int(w/2-(200*fx/2)),y+int(h/2-(185*fx/2))))
+                frame = overlay(frame, laugh_man,(x+int(w/2-(200*fx/2)),y+int(h/2-(185*fx/2))))
 
                 #合成結果を出力
                 cv2.imshow("Frame",frame)
