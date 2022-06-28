@@ -3,22 +3,11 @@ import numpy as np
 from PIL import Image
 
 
-
-def overlay(
-        cv_background_image,
-        cv_overlay_image,
-        point,
-):
-    """
-    [summary]
-      OpenCV形式の画像に指定画像を重ねる
-    Parameters
-    ----------
-    cv_background_image : [OpenCV Image]
-    cv_overlay_image : [OpenCV Image]
-    point : [(x, y)]
-    Returns : [OpenCV Image]
-    """
+#cv_background_image：貼り付け元の画像（np.ndarray）
+#cv_overlay_image：貼り付ける透過素材（np.array）
+#point：貼り付け位置（tupple）
+def overlay(cv_background_image, cv_overlay_image, point,):
+    
     overlay_height, overlay_width = cv_overlay_image.shape[:2]
 
     # OpenCV形式の画像をPIL形式に変換(α値含む)
