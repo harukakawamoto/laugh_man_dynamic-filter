@@ -57,7 +57,8 @@ class CvOverlayImage(object):
         result_image = \
             Image.alpha_composite(pil_rgba_bg_image, pil_rgba_bg_temp)
 
-        # OpenCV形式画像へ変換
+        # pilloをnumpy.ndarray形式に変換
+        # RGBAをBGRAに変換
         cv_bgr_result_image = cv.cvtColor(
             np.asarray(result_image), cv.COLOR_RGBA2BGRA)
 
